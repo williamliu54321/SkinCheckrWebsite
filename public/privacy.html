@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Skin Checkr</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600">
+            <path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/>
+          </svg>
+          <span class="text-2xl font-bold text-gray-900">Skin Checkr</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+        <a href="privacy.html" class="text-gray-600 hover:text-blue-600 transition-colors">Privacy Policy</a>
+        <a href="terms.html" class="text-gray-600 hover:text-blue-600 transition-colors">Terms & Conditions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-16 container mx-auto px-6 lg:px-20">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
+    <p class="text-sm text-gray-500 mb-4">Last updated: <span id="updated-date"></span></p>
+    <p>Skin Checkr Inc. ("we", "our", "us") is committed to protecting your privacy. 
+    This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("Service").</p>
+
+    <h2 class="text-2xl font-bold mt-6 mb-2">Information We Collect</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Personal Information:</strong> Name, email address, and demographic data voluntarily provided.</li>
+      <li><strong>Health Data:</strong> Photos of skin spots submitted for AI analysis.</li>
+      <li><strong>Usage Data:</strong> Device and diagnostic information to enhance performance.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mt-6 mb-2">How We Use Your Data</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Provide AI-driven skin analysis and tracking features.</li>
+      <li>Improve AI models (only with anonymized and consented data).</li>
+      <li>Communicate updates and important information.</li>
+      <li>Comply with legal obligations.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mt-6 mb-2">Your Rights</h2>
+    <p>You have the right to request access, corrections, or deletion of your data. Contact us at 
+    <a href="mailto:privacy@skincheckr.com" class="text-blue-600 hover:underline">privacy@skincheckr.com</a>.</p>
+
+    <h2 class="text-2xl font-bold mt-6 mb-2">Security</h2>
+    <p>We use encryption, secure servers, and access controls to protect your data, though no method of transmission is 100% secure.</p>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-6 py-6 text-center">
+      <p>&copy; <span id="footer-year"></span> Skin Checkr. All rights reserved.</p>
+      <p class="text-xs mt-2">Disclaimer: Skin Checkr is for informational use only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("updated-date").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
